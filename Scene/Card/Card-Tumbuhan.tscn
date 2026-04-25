@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dhliqcmdrs0mn"]
+
+[ext_resource type="Texture2D" uid="uid://b2xdc65rbuo45" path="res://Assets/Frame/Transparant/pertanian-frame.png" id="1_rbosf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_glv2v"]
+size = Vector2(256, 288)
+
+[node name="Card" type="Node2D" unique_id=1166963186]
+
+[node name="CardImage" type="Sprite2D" parent="." unique_id=1846319266]
+position = Vector2(-4.7683716e-07, -4.7683716e-07)
+scale = Vector2(0.299, 0.3)
+texture = ExtResource("1_rbosf")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1044783270]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=70467770]
+position = Vector2(2, 6)
+shape = SubResource("RectangleShape2D_glv2v")
+
+[node name="HealthLabel" type="Label" parent="." unique_id=1145228026]
+offset_left = 84.0
+offset_top = 113.0
+offset_right = 122.0
+offset_bottom = 136.0
+text = "4"
+horizontal_alignment = 1
+
+[node name="AttackLabel" type="Label" parent="." unique_id=953795580]
+offset_left = -117.0
+offset_top = 103.0
+offset_right = -79.0
+offset_bottom = 142.0
+theme_override_font_sizes/font_size = 28
+text = "4"
+horizontal_alignment = 1
+
+[node name="CardLevelLabel" type="Label" parent="." unique_id=379407329]
+offset_left = -120.0
+offset_top = -128.0
+offset_right = -82.0
+offset_bottom = -89.0
+theme_override_font_sizes/font_size = 28
+text = "4"
+horizontal_alignment = 1
