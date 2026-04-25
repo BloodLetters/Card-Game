@@ -1,8 +1,14 @@
 [gd_scene format=3 uid="uid://co77xhcuhgbov"]
 
 [ext_resource type="PackedScene" uid="uid://dhliqcmdrs0mn" path="res://Scene/Card/Card-Tumbuhan.tscn" id="1_glv2v"]
+[ext_resource type="Script" uid="uid://lbix3gew4m40" path="res://Scripts/CardManager/CardManager.gd" id="1_uu6xs"]
 
 [node name="Main" type="Node2D" unique_id=1924490806]
 
-[node name="Card" parent="." unique_id=1166963186 instance=ExtResource("1_glv2v")]
+[node name="CardManager" type="Node2D" parent="." unique_id=1208958331]
+script = ExtResource("1_uu6xs")
+
+[node name="Card" parent="CardManager" unique_id=1166963186 instance=ExtResource("1_glv2v")]
 position = Vector2(585, 308)
+
+[node name="Card2" parent="CardManager" unique_id=1115610410 instance=ExtResource("1_glv2v")]

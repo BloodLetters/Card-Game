@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dhliqcmdrs0mn"]
 
 [ext_resource type="Texture2D" uid="uid://4bfgo6di8r1b" path="res://Assets/Frame/Background/bg-frame.jpeg" id="1_awmxc"]
+[ext_resource type="Script" uid="uid://j8xcrtdmrcjj" path="res://Scripts/Card/Hover.gd" id="1_iaxbn"]
 [ext_resource type="Texture2D" uid="uid://b2xdc65rbuo45" path="res://Assets/Frame/Transparant/pertanian-frame.png" id="1_rbosf"]
 [ext_resource type="Texture2D" uid="uid://b4jar1loqxxmf" path="res://Assets/Tumbuhan/Transparant/jagung.png" id="2_iaxbn"]
 [ext_resource type="FontFile" uid="uid://cryrdui7cf0pi" path="res://Assets/Font/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf" id="4_0ldjp"]
@@ -9,6 +10,7 @@
 size = Vector2(256, 288)
 
 [node name="Card" type="Node2D" unique_id=1166963186]
+script = ExtResource("1_iaxbn")
 
 [node name="BgFrame" type="Sprite2D" parent="." unique_id=1426904014]
 position = Vector2(4.499996, -17.499992)
@@ -82,3 +84,6 @@ theme_override_font_sizes/font_size = 13
 text = "Jagung"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
