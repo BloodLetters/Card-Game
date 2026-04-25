@@ -1,21 +1,8 @@
 [gd_scene format=3 uid="uid://co77xhcuhgbov"]
 
-[ext_resource type="Texture2D" uid="uid://b2xdc65rbuo45" path="res://Assets/Frame/Transparant/pertanian-frame.png" id="1_glv2v"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_glv2v"]
-size = Vector2(256, 288)
+[ext_resource type="PackedScene" uid="uid://dhliqcmdrs0mn" path="res://Scene/Card/Card-Tumbuhan.tscn" id="1_glv2v"]
 
 [node name="Main" type="Node2D" unique_id=1924490806]
 
-[node name="Card" type="Node2D" parent="." unique_id=332095558]
-
-[node name="CardImage" type="Sprite2D" parent="Card" unique_id=1734667704]
-position = Vector2(-4.7683716e-07, -4.7683716e-07)
-scale = Vector2(0.299, 0.3)
-texture = ExtResource("1_glv2v")
-
-[node name="Area2D" type="Area2D" parent="Card" unique_id=1798393999]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Card/Area2D" unique_id=1465606665]
-position = Vector2(2, 6)
-shape = SubResource("RectangleShape2D_glv2v")
+[node name="Card" parent="." unique_id=1166963186 instance=ExtResource("1_glv2v")]
+position = Vector2(585, 308)
