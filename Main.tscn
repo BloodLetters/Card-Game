@@ -12,3 +12,9 @@ script = ExtResource("1_uu6xs")
 position = Vector2(585, 308)
 
 [node name="Card2" parent="CardManager" unique_id=1115610410 instance=ExtResource("1_glv2v")]
+
+[node name="Card3" parent="CardManager" unique_id=1285523381 instance=ExtResource("1_glv2v")]
+
+[node name="Card4" parent="CardManager" unique_id=1461310475 instance=ExtResource("1_glv2v")]
+
+[node name="Card5" parent="CardManager" unique_id=610311116 instance=ExtResource("1_glv2v")]

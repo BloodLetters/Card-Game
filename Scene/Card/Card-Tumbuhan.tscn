@@ -10,6 +10,7 @@
 size = Vector2(256, 288)
 
 [node name="Card" type="Node2D" unique_id=1166963186]
+scale = Vector2(1.0047802, 1.0912066)
 script = ExtResource("1_iaxbn")
 
 [node name="BgFrame" type="Sprite2D" parent="." unique_id=1426904014]
@@ -41,6 +42,7 @@ offset_bottom = 136.0
 theme_override_fonts/font = ExtResource("4_0ldjp")
 text = "4"
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Attack" type="Label" parent="." unique_id=953795580]
 offset_left = -117.0
@@ -51,6 +53,7 @@ theme_override_fonts/font = ExtResource("4_0ldjp")
 theme_override_font_sizes/font_size = 28
 text = "4"
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="CardLevel" type="Label" parent="." unique_id=379407329]
 offset_left = -120.0
@@ -61,6 +64,7 @@ theme_override_fonts/font = ExtResource("4_0ldjp")
 theme_override_font_sizes/font_size = 28
 text = "4"
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="CardDescription" type="Label" parent="." unique_id=697552583]
 offset_left = -103.0
@@ -73,6 +77,7 @@ text = "Tanaman Jagung Memperkuat
 Pertahanan pangan di
 Daerah mu"
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="CardName" type="Label" parent="." unique_id=1717405147]
 offset_left = -76.0
@@ -84,6 +89,7 @@ theme_override_font_sizes/font_size = 13
 text = "Jagung"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
